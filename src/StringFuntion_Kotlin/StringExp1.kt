@@ -1,0 +1,33 @@
+package StringFuntion_Kotlin
+
+ fun main() {
+     val name: String = "John Deo"
+     println("name[0]: ${name[0]}")
+     println("name.plus(\"Hi\"):  ${name.plus("Hi")}")
+     println("name.get(0) : ${name.get(0)}")
+     println("name.length:  ${name.length}")
+     println("name.chars() : ")
+     var ch = name.chars()
+     for (c in ch)
+         print("$c")
+     println()
+     println("name.CompareTo(\"John\"): ${name.compareTo("John")}")
+     println("name.equals(\"John Deo\") : ${name.equals("John Deo")}")
+     println("name.subSequence(0,8) :  ${name.subSequence(0,8)}")
+     println("name.capitalize()  :  ${name.capitalize()}")
+     println("name.codePointAt(0)  : ${name.codePointAt(0)}")
+     println("name.codePointBefore(1)  : ${name.codePointBefore(1)}")
+     println("name.codePointCount(0,name.length)  :  ${name.codePointCount(0,name.length)}")
+     println("name.decapitalize()  :  ${name.decapitalize()}")
+     println("name.drop(0) :  ${name.drop(0)}")
+     println("name.dropLast(2)  : ${name.dropLast(2)}")
+     println("name.endsWith(\"r\") : ${name.endsWith("r")}")
+     println("name.replace(\"Akshay\", \"Mr.\")  : ${name.replace("Akshay", "Mr.")}")
+     println("name.reversed()  : ${name.reversed()}")
+     println("name.removeRange(0,3)  : ${name.removeRange(0,3)}")
+     println("name.slice(1..3)  : ${name.slice(1..3)}")
+     println("name.startsWith(\"P\")  : ${name.startsWith("P")}")
+     println("name.substring(0,4)  :  ${name.substring(0,4)}")
+     println("name.take(2)  :  ${name.take(2)}")
+     println("name.trim()  :  ${name.trim()}")
+ }

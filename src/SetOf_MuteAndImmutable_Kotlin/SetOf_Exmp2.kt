@@ -1,0 +1,41 @@
+package SetOf_MuteAndImmutable_Kotlin
+
+ fun main() {
+   val setListDemo = setOf<Int>(1,2,3,4,5,6,7,8,9,0)
+    setListDemo.plus(10)
+    setListDemo.plus(12)
+    setListDemo.plus(13)
+
+     for (setDemo1 in setListDemo)
+         print(" $setDemo1")
+     println(setListDemo.size)
+     println(setListDemo.minus(7))
+     println(setListDemo.plus(1))
+     println(setListDemo.plusElement(3))
+     println(setListDemo.stream())
+     println(setListDemo.minOf { 4 })
+     println(setListDemo.average())
+     println(setListDemo.chunked(9))
+     println(setListDemo.count())
+     println(setListDemo.distinct())
+     println(setListDemo.drop(3))
+     println(setListDemo.first())
+     println(setListDemo.last())
+     println(setListDemo.first())
+     println(setListDemo.last())
+     println(setListDemo.maxOf { 1 })
+     println(setListDemo.reversed())
+
+     println(setListDemo.sorted())
+     println(setListDemo.sortedBy { 8 })
+     println(setListDemo.sum())
+     println(setListDemo.toIntArray())
+     println(setListDemo.toList())
+
+    println("-----Method in  mutableSetOf()--------")
+    println(setListDemo.plusElement(55))
+    println(setListDemo.drop(9))
+    println(setListDemo.dropWhile { setListDemo.size > 10 })
+    for (setDemo2 in setListDemo)
+        print(setDemo2)
+  }
